@@ -150,5 +150,31 @@ class Vip inherits Fiesta {
 
 ```
 
+6. Responder justificando conceptualmente: en la solución del punto anterior, ¿es posible agregar este nuevo requerimiento sin modificar el código existente?.
 
+**Respuesta**: Verdadero. Se puede tratar **polimórficamente** a los grupos como si fueran un invitado más. Sólo deben respetar la interfaz de un invitado (como alan o las barbies): entender los mensajes `brillo()` y `esFashion()`
+
+7. Codificarlo en Wollok.
+
+**Respuesta**
+
+```wollok
+class Grupo {
+  const participantes = []
+  
+  method brillo() = self.sumaBrillos() * 2
+  
+  method sumaBrillos() = participantes.sum({participante => participante.brillo()}) // vale tmb map con sum, pero así es un poquito más declarativo.
+  
+  method esFashion() = self.cantFashions() > self.cantNoFashions()
+
+  method cantFashions() = participantes.count({participante => participante.esFashion()}) //vale tmb filter con size, pero así es un poquito más declarativo.
+  
+  method cantNoFashions() = participantes.size() - self.cantFashions()
+}
+``` 
+
+8. Hacer un diagrama estático de las partes 2 y 3.
+
+**Respuesta**:
 
