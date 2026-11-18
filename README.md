@@ -180,4 +180,5 @@ class Grupo {
 
 [Acá el PlantUML](estatico.puml)
 
+<img width="888" height="400" alt="image" src="https://github.com/user-attachments/assets/564d5d49-6db9-46a9-a4ff-3bb2278abf2c" />
 
