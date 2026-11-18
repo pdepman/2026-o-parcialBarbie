@@ -1,7 +1,6 @@
-# ejercicio-alumno
+# Parcial objetos
 
-## Integrantes
+Curso: Martes Noche 2026
 
-- integrante1 (usuario github)
-- integrante2 (usuario github)
-...
+- [Enunciado](Parcial%20Objetos%20-%20Barbie.pdf)
+- [Solucion](example.wlk)

@@ -1,0 +1,60 @@
+@startuml
+
+class Barbie {
+  profesion
+  ---
+  brillo()
+  esFashion()
+}
+
+object alan {
+  ---
+  brillo()
+  esFashion()
+}
+
+class Fiesta {
+  invitados
+  ---
+  agregarInvitado(inv)
+}
+
+class Exclusiva extends Fiesta {
+  brilloRequerido
+  ---
+  admite(invitado)
+}
+
+class ConCupo extends Fiesta {
+  cupo
+  ---
+  admite(invitado)
+}
+
+class Vip extends Fiesta {
+  ---
+  admite(invitado)
+}
+
+class Grupo {
+  participantes
+  --- 
+  sumaBrillos()
+  brillo()
+  esFashion()
+  cantFashions()
+  cantNoFashions()
+}
+
+interface Invitado {
+    brillo()
+    esFashion()
+}
+
+Barbie ..|> Invitado
+alan ..|> Invitado
+Grupo ..|> Invitado
+
+Fiesta -->"*" Invitado
+
+@enduml
