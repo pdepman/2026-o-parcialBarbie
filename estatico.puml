@@ -56,5 +56,6 @@ alan ..|> Invitado
 Grupo ..|> Invitado
 
 Fiesta -->"*" Invitado
+Grupo -->"*" Invitado
 
 @enduml

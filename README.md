@@ -178,3 +178,6 @@ class Grupo {
 
 **Respuesta**:
 
+[Acá el PlantUML](estatico.puml)
+
+
